@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <div id="container">
+        <div class='project-input-burger'>
+            <div class='line1'></div>
+            <div class='line2'></div>
+            <div class='line3'></div>
+        </div>
+        <div id="project-input">
+            <div class="form">
+                <div class="project-section">
+                    <input id="project" type="text" autocomplete="off" required />
+                    <label for="text" class="label-name">
+                        <span class="content-name">Project</span>
+                    </label>
+                </div>
+                <div class="project-section">
+                    <input id="description" type="text" autocomplete="off" required />
+                    <label for="text" class="label-name">
+                        <span class="content-name">Description (Optional)</span>
+                    </label>
+                </div>
+                <div class="project-section">
+                    <input id="notes" type="text" autocomplete="off" required /> 
+                    <label for="text" class="label-name">
+                        <span class="content-name">Notes (Optional)</span>
+                    </label>
+                </div>
+                <div class="project-section">
+                    <input id="due-date" type="date"  onKeyDown='{e => e.preventDefault()}'>
+                    <label for="text" class="label-name">
+                        <span class="content-name">Due Date (Optional)</span>
+                    </label>
+                </div>
+            </div>
+            <button id="add-project">Add project</button>
+        </div>
+        <div id='project-display'>
+            <div class="select">
+                <select id="filter-todos">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+            <div id="project-container"><ul id="list"></ul></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
