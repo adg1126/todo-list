@@ -1,361 +1,363 @@
 body {
-    background: url(productivity.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
+  background: url(productivity.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
-    font-size: 2.3rem;
-    text-align: center;
-    margin: 0.5em 0em 0em 0.5em;
-    background: rgba(243, 241, 241, 0.5);
-    text-shadow: 0 0 0.1rem white;
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 0.5em 0em 0em 0.5em;
+  background: rgba(243, 241, 241, 0.5);
+  text-shadow: 0 0 0.1rem white;
 }
 
 #container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#project-input, #project-container {
-    margin-top: 5%;
-    padding: 1% 1% 1% 1%;
-    color: black;
-    background: rgba(0, 0, 0, 0.4);
-    border: 0.4rem solid black;
-    border-radius: .5rem;
+#project-input,
+#project-container {
+  margin-top: 5%;
+  padding: 1% 1% 1% 1%;
+  color: black;
+  background: rgba(0, 0, 0, 0.4);
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
 }
 
 #project-input {
-    max-width: 350px;
-    width: 35%;
-    height: 18em;
-    width: 100%;
-    margin-top: 5%;
-    padding: 1% 1% 3% 1%;
+  max-width: 350px;
+  width: 35%;
+  height: 18em;
+  width: 100%;
+  margin-top: 5%;
+  padding: 1% 1% 3% 1%;
 }
 
 #project-container {
-    width: 100%;
+  width: 100%;
 }
 
 .form {
-    width: 100%;
-    height: 90%;
-    overflow: hidden;
-    margin-top: 0.6em;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  margin-top: 0.6em;
 }
 
 .project-section {
-    position: relative;
-    width: 100%;
-    height: 18%;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+  height: 18%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1em;
 }
 
 .project-section input {
-    width: 100%;
-    height: 100%;
-    color: #595f6e;
-    padding-top: 12px;
-    border: none;
-    outline: none;
-    left: 2%;
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 12px;
+  border: none;
+  outline: none;
+  left: 2%;
 }
 
 .project-section label {
-    position: absolute;
-    bottom: 0px;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
 }
 
 .project-section label::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid black;
-    left: 0px;
-    bottom: -1px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid black;
+  left: 0px;
+  bottom: -1px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
 .content-name {
-    position: absolute;
-    bottom: 5px;
-    left: 2%;
-    transition: all 0.3s ease;
+  position: absolute;
+  bottom: 7px;
+  left: 2%;
+  transition: all 0.3s ease;
 }
 
 .project-section input:focus + .label-name .content-name,
 .project-section input:valid + .label-name .content-name {
-    transform: translateY(-150%);
-    font-size: 14px;
-    color: black;
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: black;
 }
 
-.project-section  input:focus + .label-name::after, 
-.project-section  input:valid + .label-name::after  {
-    transform: translateX(0%);
-} 
+.project-section input:focus + .label-name::after,
+.project-section input:valid + .label-name::after {
+  transform: translateX(0%);
+}
 
 button {
-    background-color: grey;
-    color: white;
-    margin: 0.5em 0.8em;
-    display: inline-block;
+  background-color: grey;
+  color: white;
+  margin: 0.5em 0.8em;
+  display: inline-block;
 }
 
 #project-display {
-    max-width: 400px;
-    width: 50%;
-    height: 50%;
-    margin-top: 2%;
+  max-width: 400px;
+  width: 50%;
+  height: 50%;
+  margin-top: 2%;
 }
 
 select {
-    color: white;
-    background: rgba(128, 128, 128, 0.8);
-    width: 12em;
-    cursor: pointer;
-    font-size: 0.8rem;
-    padding: 0.2em;
-    text-shadow: 0 0 0.5rem black;
-    border: 0.2rem solid black;
+  color: white;
+  background: rgba(128, 128, 128, 0.8);
+  width: 12em;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.2em;
+  text-shadow: 0 0 0.5rem black;
+  border: 0.2rem solid black;
 }
 
 #project-container {
-    max-width: 550px;
-    max-height: 400px;
-    width: 100%;
-    height: 25em;
-    margin-top: 2%;
-    overflow-y: auto;
+  max-width: 550px;
+  max-height: 400px;
+  width: 100%;
+  height: 25em;
+  margin-top: 2%;
+  overflow-y: auto;
 }
 
 ul {
-    width: 100%;
-    height: 25em;
-    overflow-y: auto;
-    overflow-x: hidden;
+  width: 100%;
+  height: 25em;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 li {
-    color: white;
-    font-size: 1rem;
-    margin: 0.2em 0em;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease;
-    display: block;
-    font-size: 1rem;
-    height: auto;
+  color: white;
+  font-size: 1rem;
+  margin: 0.2em 0em;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  display: block;
+  font-size: 1rem;
+  height: auto;
 }
 
 .project-name {
-    width: 80%;
-    margin-right: 0em;
-    padding: 0.4em 0.4em;
+  width: 80%;
+  margin-right: 0em;
+  padding: 0.4em 0.4em;
 }
 
 .li-content {
-    display: none;
+  display: none;
 }
 
 .li-item {
-    padding: 0.4em 0.4em;
+  padding: 0.4em 0.4em;
 }
 
 .li-content.active {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .fall {
-    transform: translateX(1em) rotateZ(20deg);
-    opacity: 0;
+  transform: translateX(1em) rotateZ(20deg);
+  opacity: 0;
 }
 
 #todo-list-containert {
-    display: grid;
-    grid-template-columns: 75% 20%;
-    grid-template-rows: auto 2.5em;
+  display: grid;
+  grid-template-columns: 75% 20%;
+  grid-template-rows: auto 2.5em;
 }
 
 #todo-list {
-    height: auto;
-    padding: 0.4em 0.4em;
-    grid-column: 1/3;
+  height: auto;
+  padding: 0.4em 0.4em;
+  grid-column: 1/3;
 }
 
 #todo-list li {
-    margin: 0.5em 0.5em;
-    padding: 0.3em 0.5em;
+  margin: 0.5em 0.5em;
+  padding: 0.3em 0.5em;
 }
 
 .todo-section {
-    position: relative;
-    width: 90%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 1em;
-    margin-left: 1em;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .todo-section input {
-    width: 100%;
-    height: 100%;
-    color: #595f6e;
-    padding-top: 6px;
-    border: none;
-    outline: none;
-    left: 2%;
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 6px;
+  border: none;
+  outline: none;
+  left: 2%;
 }
 
 .todo-section label {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    color: black;
-    border-bottom: 1px solid black;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: black;
+  border-bottom: 1px solid black;
 }
 
 .todo-section label::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid black;
-    left: 0px;
-    bottom: 0;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid black;
+  left: 0px;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
 .content-name {
-    position: absolute;
-    bottom: 0;
-    left: 2%;
-    transition: all 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+  transition: all 0.3s ease;
 }
 
 .todo-section input:focus + .label-name .content-name,
 .todo-section input:valid + .label-name .content-name {
-    transform: translateY(-150%);
-    font-size: 14px;
-    color: black;
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: black;
 }
 
-.todo-section  input:focus + .label-name::after, 
-.todo-section  input:valid + .label-name::after  {
-    transform: translateX(0%);
-} 
+.todo-section input:focus + .label-name::after,
+.todo-section input:valid + .label-name::after {
+  transform: translateX(0%);
+}
 
 .add-todo {
-    background-color: grey;
-    color: white;
-    padding: 0.1em 0em;
-    width: 5em;
-    height: 2em;
-    grid-column: 2/3;
-    margin: 0.8em 0em 0em 0.5em;
+  background-color: grey;
+  color: white;
+  padding: 0.1em 0em;
+  width: 5em;
+  height: 2em;
+  grid-column: 2/3;
+  margin: 0.8em 0em 0em 0.5em;
 }
 
 .burger {
-    cursor: pointer;
-    left: 100%;
-    transform: translateX(-10%);
-    position: relative;
+  cursor: pointer;
+  left: 100%;
+  transform: translateX(-10%);
+  position: relative;
 }
 
 .burger div {
-    width: 1.3em;
-    height: 0.1em;
-    background-color: white;
-    margin: 0.2em 0.1em;
+  width: 1.3em;
+  height: 0.1em;
+  background-color: white;
+  margin: 0.2em 0.1em;
 }
 
 .x .line1 {
-    transform: rotate(-45deg) translate(-0.1em, 0.3em);
+  transform: rotate(-45deg) translate(-0.1em, 0.3em);
 }
 .x .line2 {
-    opacity: 0;
+  opacity: 0;
 }
 .x .line3 {
-    transform: rotate(45deg) translate(-0.1em, -0.3em);
+  transform: rotate(45deg) translate(-0.1em, -0.3em);
 }
 
-.mark-as-completed, .remove {
-    height: 1.7em;
-    margin-top: 1em;
+.mark-as-completed,
+.remove {
+  height: 1.7em;
+  margin-top: 1em;
 }
 
 .project-input-burger {
-    display: none;
+  display: none;
 }
 
-@media(max-width: 760px) {
-    body {
-        background-position: 60% 10%;
-    }
+@media (max-width: 760px) {
+  body {
+    background-position: 60% 10%;
+  }
 
-    #container {
-        display: block;
-    }
-    
-    #project-display {
-        position: absolute;
-        width: 80%;
-        height: 70%;
-        top: 10vh;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    #project-display.active {
-        filter: blur(3px);
-    }
+  #container {
+    display: block;
+  }
 
-    #project-input {
-        display: block;
-        width: 80%;
-        position: absolute;
-        top: 10vh;
-        z-index: 2;
-        left: 50%;
-        transform: translateX(-200%);
-        transition: transform 0.5s ease-in;
-    }
+  #project-display {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    #project-input.active {
-        transform: translateX(-50%);
-    }
+  #project-display.active {
+    filter: blur(3px);
+  }
 
-    .project-input-burger {
-        display: block;
-        position: absolute;
-        top: 5vh;
-        left: 14%;
-        transform: translateX(-86%);
-        cursor: pointer;
-    }
+  #project-input {
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 10vh;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-200%);
+    transition: transform 0.5s ease-in;
+  }
 
-    .project-input-burger div {
-        width: 1.4em;
-        height: 0.2em;
-        background-color: black;
-        margin: 0.2em 0.1em;
-    }
+  #project-input.active {
+    transform: translateX(-50%);
+  }
+
+  .project-input-burger {
+    display: block;
+    position: absolute;
+    top: 5vh;
+    left: 14%;
+    transform: translateX(-86%);
+    cursor: pointer;
+  }
+
+  .project-input-burger div {
+    width: 1.4em;
+    height: 0.2em;
+    background-color: black;
+    margin: 0.2em 0.1em;
+  }
 }

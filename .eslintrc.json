@@ -1,0 +1,18 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-use-before-define": "off",
+    "no-console": "off",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "spaced-comment": "off",
+    "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    "no-unused-expressions": [2, { "allowTernary": true }]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
